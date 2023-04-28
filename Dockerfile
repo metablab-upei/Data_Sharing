@@ -38,8 +38,8 @@ RUN R -e 'install.packages(c(\
 
 
 # copy the app directory into the image
-COPY ./ASAppRead-only/*.R /srv/shiny-server/ASAppRead-only/
-COPY ./ASAppRead-only/*.csv /srv/shiny-server/ASAppRead-only/
+COPY ./ASAppRead-only/*.R /srv/shiny-server/asapp/
+COPY ./ASAppRead-only/*.csv /srv/shiny-server/asapp/
 
 # run app
 CMD ["/usr/bin/shiny-server"]
